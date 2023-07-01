@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Landing Page</title>
+  <style>
+    /* CSS Styles */
+    .container {
+      text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    border-radius: 10px;
+    color: darkblue;
+    font-size: larger;
+    background-color: cornsilk;
+    border-radius: -13px;
+    border-radius: 205px
+    }
+
+    .animated-image {
+      width: 246px;
+      height: 200px;
+      position: relative;
+      animation: rotate 30s linear infinite;
+      border-radius: 51px;
+      background: floralwhite;
+      position: relative;
+      right: 554px;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    body {
+      margin: 0px;
+    padding: 0;
+    background-color: #FDCEDF;
+    font-family: Times New Roman (serif);
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    text-decoration: wavy;
+    font-weight: initial
+    }
+
+    .header {
+      background-image: linear-gradient(to right, #348F50, #56B4D3), url("demo-image.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      animation: fadeIn 1s ease both;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px;
+      background-color: #29cdad;
+      color: #000;
+      animation: slideInDown 0.5s ease both
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .navbar-nav {
+      display: flex;
+      list-style: none;
+      margin: 27px;
+      padding: 6px;
+      background: linear-gradient(45deg, black, transparent)
+    }
+    .nav-item {
+      margin-right: 63px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #56B4D3;
+    }
+
+    .box-container {
+      display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    animation: fadeInUp 3s ease both;
+    }
+
+    .box {
+      width: 347px;
+    height: 682px;
+    border: 2px solid #12c3d375;
+    border-radius: 46px;
+    margin: 0px 56px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 3s ease;
+    animation: scaleIn 2s ease both;
+    COLOR: aliceblue;
+    BACKGROUND: #256667;
+    FONT-STYLE: italic;
+    TEXT-ALIGN: center;
+    text-decoration: wavy;
+    font-size: unset;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    .box-title {
+      font-size: 36px;
+      margin-bottom: -16px;
+      POSITION: relative;
+      BOTTOM: 12PX;
+    }
+
+    .login-box {
+      width: 300px;
+    padding: 20px;
+    border: 7px solid #1fc377;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    animation: fadeInUp 1s ease both;
+    position: relative;
+    right: 391px;
+    bottom: -50vh;
+    z-index: 2;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .footer {
+      position: relative;
+    overflow: hidden;
+    padding: 73px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    width: 96%;
+    height: 267px;
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: slideInUp 1s ease both;
+    }
+
+    .footer-text {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .icon-link {
+      color: #fff;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .icon-link:hover {
+      color: #56B4D3;
+    }
+
+
+    @keyframes waterFlow {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 100% 0;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .imagesetting {
+      position: relative;
+      top: -10px;
+      background: floralwhite;
+      position: relative;
+      left: -13px;
+      border-radius: 32px;
+    }
+
+    @keyframes slideInDown {
+      0% {
+        transform: translateY(-100%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideInUp {
+      0% {
+        transform: translateY(100%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .header {
+        height: 200px;
+      }
+
+      .box-container {
+        flex-wrap: wrap;
+      }
+
+      .box {
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="setting">
+      <div class="imagesetting">
+        <img src="logo.webp" alt="logo">
+      </div>
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+    </ul>
+  </div>
+  <div class="blockly">
+    <img src="favicon.png" alt="Animated Image" class="animated-image">
+  </div>
+  <div class="header">
+    <h1>Skillonation
+      “ Where curiosity meets creativity!”
+      We shape tiny minds with perfect portions of interactive teaching and limitless fun. The ultimate venue to trigger
+      the young inventor inside you!
+    </h1>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <h2>About Us</h2>
+      <p>Robotics
+        Have you ever seen your child get excited about repairing broken toys or break-opening them? If your answer is a
+        big fat, yes! Then your inquisitive child deserves to be introduced to Robotics. Robotics is an intriguing
+        fusion of software programming and mechanical building. With a basic understanding of the two, children can
+        build interactive bots to suit their creative minds. In building computational robots, children find themselves
+        in an exciting space, which is an adventurous endeavour. Creating original prototypes at an early age brings a
+        sense of joy among children that eventually builds into a powerful skill set, turning into a holistic
+        development.</p>
+      <a href="#" class="button">Get Started</a>
+    </div>
+  </div>
+  <div class="box-container">
+    <div class="box">
+      <h3 class="box-title">Robotics</h3>
+      <p><i>Robotics
+          Have you ever seen your child get excited about repairing broken toys or break-opening them? If your answer is
+          a big fat, yes! Then your inquisitive child deserves to be introduced to Robotics. Robotics is an intriguing
+          fusion of software programming and mechanical building. With a basic understanding of the two, children can
+          build interactive bots to suit their creative minds. In building computational robots, children find
+          themselves in an exciting space, which is an adventurous endeavour. Creating original prototypes at an early
+          age brings a sense of joy among children that eventually builds into a powerful skill set, turning into a
+          holistic development.</i></p>
+    </div>
+    <div class="box">
+      <h3 class="box-title">C Language</h3>
+      <p>C Language
+        When it comes to everything related to coding it must be considered that it all began with C language. The
+        proficiency in C language helps you empower your coding skills and relishes your interest to a new level of
+        programming such that becoming an ace coder is never a reason to wonder for you. Enroll here to perceive the
+        actual insights of C language giving wings for you to be masterful programmer.</p>
+    </div>
+    <div class="box">
+      <h3 class="box-title">HTML AND CSS</h3>
+      <p>HTML-CSS
+        If you have observed that the digital world has been made easier for us, then you are absolutely correct.
+        HTML-CSS will allow you to participate in the creation of the digital world through website creation. If this is
+        not something you have learnt or understood before then do not worry, creating/building websites can become your
+        new interest. Jump right in and get this beginner course.</p>
+    </div>
+  </div>
+  <div class="login-box">
+    <h2>Sign In</h2>
+    <form>
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  <div class="footer">
+    <div class="water-layer"></div>
+    <div class="footer-content">
+      <p class="footer-text">© 2023 Your Company. All rights reserved.</p>
+      <ul class="social-icons">
+        <li><a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="icon-link"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="icon-link"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
